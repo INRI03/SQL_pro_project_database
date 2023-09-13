@@ -40,10 +40,10 @@ create table workers(
 worker_id serial primary key,
 last_name varchar(50) not null,
 first_name varchar(30) not null,
---age integer not null, -- атрибут "возраст" в таблице работников не имеет смысла, вряд ли он может пригодиться в данной базе, убрал его
+--age integer not null, -- атрибут "возраст" в таблице работников не имеет смысла, вряд ли он может пригодиться в данной базе
 salary decimal(10, 2) not null,
 address varchar(100) not null,
-phone varchar(15) not null -- атрибут "контактный телефон" может пригодиться, добавил его
+phone varchar(15) not null -- атрибут "контактный телефон" может пригодиться
 )
 
 create table purchases( --добавляем еще 2 товара на случай, если в закупке будет несколько товаров, а не один
